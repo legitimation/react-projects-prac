@@ -1,8 +1,6 @@
-<<<<<<< HEAD
-# react-projects-prac
-=======
-# React Projects
+# React Projects 
 
+tutorial link: https://www.youtube.com/watch?v=a_7Z7C_JCyo&t=1977&ab_channel=freeCodeCamp.org
 #### Support
 
 Find the Content Useful? [You can always buy me a coffee](https://www.buymeacoffee.com/johnsmilga)
