@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+// if readmore true --> show 'show less' & info,
+// if show less () --> only show substring up to 200 (first 200 strings of data)
 const Tour = ({ id, image, info, name, price, removeTour }) => {
   const [readMore, setReadMore] = useState(false);
   return (
