@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import data from './data'
 import List from './List'
+
 function App() {
   const [people, setPeople] = useState(data)
   return (
@@ -14,4 +15,7 @@ function App() {
   )
 }
 
+// length of array --> no. of birthdays for today
+// send people props to list comp --> map inside list.js comp
+// simple use effect; 
 export default App
