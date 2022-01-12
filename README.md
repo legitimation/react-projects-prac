@@ -1,11 +1,6 @@
-<<<<<<< HEAD
-# react-projects-prac
-=======
 # React Projects
 
-#### Support
-
-Find the Content Useful? [You can always buy me a coffee](https://www.buymeacoffee.com/johnsmilga)
+https://www.youtube.com/watch?v=a_7Z7C_JCyo&t=1977&ab_channel=freeCodeCamp.org --> tutorial link
 
 #### Tutorial Video
 
@@ -14,8 +9,6 @@ Find the Content Useful? [You can always buy me a coffee](https://www.buymeacoff
 #### All Projects
 
 [Projects Site](https://react-projects.netlify.app/)
-
-## Corresponding Tutorial Topics
 
 #### useState
 
@@ -65,4 +58,3 @@ Find the Content Useful? [You can always buy me a coffee](https://www.buymeacoff
 21. Movie DB
 22. Hacker News
 23. Quiz
->>>>>>> e44b541e002fca44db1e07b2d0a5275824f6d0e6
