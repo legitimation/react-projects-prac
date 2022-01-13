@@ -13,6 +13,8 @@ function App() {
     if (count > 8) {
       amount = 8;
     }
+    // slice, returs the array in range of order, i.e slice (0,8) returns the index 0 to 7 values in the exact order of the data array
+    // thus, technically speaking, its not fully randomised, its just displaying the pre-defined lorem ipsum in the corresponding order from the first lorem ipsum
     setText(data.slice(0, amount));
   };
   return (
@@ -24,8 +26,12 @@ function App() {
           type='number'
           name='amount'
           id='amount'
+          //value = {count}, so that changed count value is shown to the user as well
+          // if not this, the value changed will not be displayed to the user
           value={count}
           onChange={(e) => setCount(e.target.value)}
+          // onchange, e func to update the value at every moment whenever the value changes,
+          // update value instantly and at every change, not once when the submit is pressed
         />
         <button className='btn'>generate</button>
       </form>
