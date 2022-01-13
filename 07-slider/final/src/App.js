@@ -2,10 +2,16 @@ import React, { useState, useEffect } from 'react';
 import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
 import { FaQuoteRight } from 'react-icons/fa';
 import data from './data';
+
 function App() {
   const [people, setPeople] = useState(data);
   const [index, setIndex] = React.useState(0);
 
+  // chnage in index value from setindex func in 2nd use effect
+  // triggers the first useeffect as it has index attribute as well
+  // people attribute is for initial render, index attribute for continuous 5 sec re-render
+  // when index > lastindex from 2nd use effect triggers, the first use effect instantly changes the index value back to 0
+  
   useEffect(() => {
     const lastIndex = people.length - 1;
     if (index < 0) {
@@ -16,6 +22,9 @@ function App() {
     }
   }, [index, people]);
 
+  // set index triggers change in value index every 5 sec --> 2nd use effect
+  // also contains [index], therefore also triggers a 5 sec interval --> infinite 5 sec interval loop
+  // then for memory allocation, clearinterval func to save memory as left interval will be acculmulated infinite amount of times
   useEffect(() => {
     let slider = setInterval(() => {
       setIndex(index + 1);

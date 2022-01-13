@@ -60,7 +60,9 @@ function App() {
       <div className='section-center'>
         {people.map((person, personIndex) => {
           const { id, image, name, title, quote } = person
-
+          // all the other components apart from activeslide, nextslide, lastslide
+          // acculmulates on nextslide, thus when overflow is hidden, only the actual nextslide will be shown
+          // all the other slides w classname 'nextslide' will not be render due to hidden overflow
           let position = 'nextSlide'
           if (personIndex === index) {
             position = 'activeSlide'
