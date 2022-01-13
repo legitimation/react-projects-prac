@@ -3,6 +3,7 @@ import { FaBars } from 'react-icons/fa';
 import { links, social } from './data';
 import logo from './logo.svg';
 
+//useref a bit difficult to understand, useref does not cause re-render even when the value changes
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
   const linksContainerRef = useRef(null);
