@@ -18,6 +18,7 @@ const SingleColor = ({ rgb, weight, index, hexColor }) => {
       style={{ backgroundColor: `rgb(${bcg})` }}
       onClick={() => {
         setAlert(true)
+        //navigator.clipbaord.writetext links to the clipboard feature (equivalent)
         navigator.clipboard.writeText(hexValue)
       }}
     >
