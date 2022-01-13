@@ -40,6 +40,7 @@ function App() {
               <button
                 key={item.id}
                 onClick={() => setValue(index)}
+                // && conditional css change in class name 
                 className={`job-btn ${index === value && 'active-btn'}`}
               >
                 {item.company}
