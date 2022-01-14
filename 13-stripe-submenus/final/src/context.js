@@ -41,6 +41,7 @@ const AppProvider = ({ children }) => {
   );
 };
 // make sure use
+// useglobalcontext to call context from outer 
 export const useGlobalContext = () => {
   return useContext(AppContext);
 };
