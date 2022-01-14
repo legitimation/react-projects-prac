@@ -50,8 +50,8 @@ https://www.youtube.com/watch?v=a_7Z7C_JCyo&t=1977&ab_channel=freeCodeCamp.org -
 
 [Course Link](https://www.udemy.com/course/react-tutorial-and-projects-course/?couponCode=REACT-OCT)
 
-16. Markdown Preview
-17. Random Person
+16. Markdown Preview -- external api
+17. Random Person -- external api, use effect/fetch async data
 18. Pagination
 19. Stock Photos
 20. Dark Mode
