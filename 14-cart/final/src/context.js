@@ -14,6 +14,7 @@ const initialState = {
 }
 
 const AppProvider = ({ children }) => {
+  //reducer 
   const [state, dispatch] = useReducer(reducer, initialState)
 
   const clearCart = () => {
