@@ -6,6 +6,7 @@ function App() {
   const [page, setPage] = useState(0)
   const [followers, setFollowers] = useState([])
 
+  // whenever, page changes, re-render occurs, shouldnt it be !loading tho???
   useEffect(() => {
     if (loading) return
     setFollowers(data[page])
@@ -29,7 +30,7 @@ function App() {
       return prevPage
     })
   }
-
+  // moving directly to specific page not by prev, next button, click on the exact page number.
   const handlePage = (index) => {
     setPage(index)
   }
