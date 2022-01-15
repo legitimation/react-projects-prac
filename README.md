@@ -52,7 +52,7 @@ https://www.youtube.com/watch?v=a_7Z7C_JCyo&t=1977&ab_channel=freeCodeCamp.org -
 
 16. Markdown Preview -- external api
 17. Random Person -- external api, use effect/fetch async data
-18. Pagination
+18. Pagination -- array.from, array manipulation, slicing
 19. Stock Photos
 20. Dark Mode
 21. Movie DB
