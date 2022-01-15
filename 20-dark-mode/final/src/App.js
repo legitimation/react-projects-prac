@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import data from './data';
 import Article from './Article';
 
+// access to local storage
 const getStorageTheme = () => {
   let theme = 'light-theme';
   if (localStorage.getItem('theme')) {
@@ -24,6 +25,7 @@ function App() {
   useEffect(() => {
     document.documentElement.className = theme;
     localStorage.setItem('theme', theme);
+    //change the value fo the localstorage to its according theme 
   }, [theme]);
   return (
     <main>
